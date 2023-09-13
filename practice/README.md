@@ -1,2 +1,2 @@
 # Practice app
-<http://practice.hesweb.xyz>
+<http://e2practice.hesweb.xyz>
