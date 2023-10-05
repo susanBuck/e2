@@ -66,6 +66,14 @@ foreach ($cards as $key => $card) {
 //     }
 // }
 
+# VARIATION 6 - A while loop without the need to keep track of who to deal to
+# Limitation: Only works with a even number of cards
+// while(count($cards) > 0) {
+//     $playerCards[] = array_pop($cards);
+//     $computerCards[] = array_pop($cards);
+// }
+
+
 
 
 # Output results
