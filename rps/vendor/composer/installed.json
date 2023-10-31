@@ -1,0 +1,46 @@
+{
+    "packages": [
+        {
+            "name": "susanbuck/rock-paper-scissors",
+            "version": "0.1.6",
+            "version_normalized": "0.1.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/susanBuck/rock-paper-scissors.git",
+                "reference": "c198dd8b5b7d8d0be6471ea310ee41ba16527ce7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/susanBuck/rock-paper-scissors/zipball/c198dd8b5b7d8d0be6471ea310ee41ba16527ce7",
+                "reference": "c198dd8b5b7d8d0be6471ea310ee41ba16527ce7",
+                "shasum": ""
+            },
+            "time": "2021-11-01T01:49:35+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "RPS\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Susan Buck",
+                    "email": "susanbuck@fas.harvard.edu"
+                }
+            ],
+            "description": "Rock Paper Scissors",
+            "support": {
+                "issues": "https://github.com/susanBuck/rock-paper-scissors/issues",
+                "source": "https://github.com/susanBuck/rock-paper-scissors/tree/0.1.6"
+            },
+            "install-path": "../susanbuck/rock-paper-scissors"
+        }
+    ],
+    "dev": true,
+    "dev-package-names": []
+}
