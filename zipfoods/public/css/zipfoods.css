@@ -1,0 +1,188 @@
+/*----------------------------------------------------
+VARIABLES
+-----------------------------------------------------*/
+:root {
+    --radius: 5px;
+
+    --sans-serif-font: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --serif-font: Georgia, 'Times New Roman', Times, serif;
+
+    /* https://clrs.cc/ */
+    --blue: #0074D9;
+    --light-blue: #CAE9FB;
+    --teal: #39CCCC;
+    --green: #2ECC40;
+
+    --olive: #3D9970;
+
+    --yellow: #FFDC00;
+    --orange: #FF851B;
+    --red: #FF4136;
+
+    --white: #FFFFFF;
+    --silver: #DDDDDD;
+    --gray: #AAAAAA;
+    --black: #111111;
+}
+
+
+
+/*----------------------------------------------------
+MAIN LAYOUT
+-----------------------------------------------------*/
+/* universal box-sizing */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    /* http://snook.ca/archives/html_and_css/font-size-with-rem */
+    font-size: 62.5%;
+
+    color: var(--black);
+    font-family: var(--sans-serif-font);
+
+    /* Have the scroll bars always on so there's not a shift in the layout
+    when going from a non-scrolling page to a scrolling-page */
+    overflow-y: scroll;
+}
+
+body {
+    /* Default font-size */
+    font-size: 1.6rem;
+}
+
+
+main {
+    max-width: 1000px;
+    width: 100%;
+    margin: auto;
+    margin-top: 40px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+header {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#logo {
+    /* Actual width is 636; displaying at half-size for retina screens */
+    width: 318px;
+    margin-top: 15px;
+}
+
+h2 {
+    font-size: 2.75rem;
+}
+
+
+
+/*----------------------------------------------------
+FORMS
+-----------------------------------------------------*/
+input,
+textarea {
+    font-size: 2.4rem;
+}
+
+.form-control,
+.btn {
+    font-size: 1.4rem;
+}
+
+.btn {
+    margin: 10px;
+}
+
+label {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-top: 5px;
+}
+
+ul.error {
+    list-style-type: none;
+}
+
+
+
+/*----------------------------------------------------
+PRODUCTS
+-----------------------------------------------------*/
+#product-index {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+a.product-link:link,
+a.product-link:visited,
+a.product-link:active,
+a.product-link:hover {
+    text-decoration: none;
+    color: var(--black);
+    cursor: pointer;
+    border: 1px solid var(--silver);
+    text-align: center;
+    padding: 15px;
+    margin: 15px;
+    width: 30%;
+    min-width: 300px;
+}
+
+a.product-link:hover {
+    border: 1px solid var(--black);
+}
+
+.product-name {
+    height: 50px;
+    font-size: 2rem;
+    margin: 5px 0 10px 0;
+    vertical-align: baseline;
+}
+
+.product-thumb {
+    width: 75%;
+    max-width: 200px;
+    border-radius: var(--radius);
+}
+
+.product-description {
+    margin: auto;
+    margin-top: 10px;
+    text-align: left;
+    font-style: italic;
+    line-height: 1.5;
+    width: 95%;
+    max-width: 400px;
+}
+
+.product-price {
+    font-family: var(--serif-font);
+    font-weight: bold;
+    font-size: 2rem;
+    padding: 10px;
+}
+
+#product-review {
+    margin: 20px auto;
+    max-width: 75%;
+    background-color: #eee;
+    border-radius: 3px;
+    padding: 10px;
+}
+
+#product-review input {
+    width: 200px;
+    margin: auto;
+}
+
+#product-review textarea {
+    height: 100px;
+}
