@@ -31,6 +31,7 @@
     <form method='POST' id='product-review' action='/products/save-review'>
         <h3>Review {{ $product['name'] }}</h3>
         <input type='hidden' name='sku' value='{{ $product['sku'] }}'>
+        <input type='hidden' name='product_id' value='{{ $product['id'] }}'>
         <div class='form-group'>
             <label for='name'>Name</label>
             <input type='text' class='form-control' name='name' id='name' value='{{ $app->old('name') }}'>

@@ -4,7 +4,8 @@
     "license": "MIT",
     "type": "project",
     "require": {
-        "susanbuck/e2core": "^0.1.0"
+        "susanbuck/e2core": "^0.1.0",
+        "fakerphp/faker": "^1.23"
     },
     "autoload": {
         "psr-4": {
