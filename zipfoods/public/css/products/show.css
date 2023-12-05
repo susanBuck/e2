@@ -1,0 +1,48 @@
+
+/*----------------------------------------------------
+Form to leave a review
+-----------------------------------------------------*/
+#product-review {
+    margin: 20px auto;
+    max-width: 75%;
+    background-color: #eee;
+    border-radius: 3px;
+    padding: 10px;
+}
+
+#product-review input {
+    width: 200px;
+    margin: auto;
+}
+
+#product-review textarea {
+    height: 100px;
+}
+
+#reviews {
+    margin: 20px 0;
+    max-width: 75%;
+    margin: 25px auto;
+}
+
+
+/*----------------------------------------------------
+Show reviews
+-----------------------------------------------------*/
+.review {
+    border: 1px solid #eee;
+    padding: 15px;
+    border-radius: var(--radius);
+    margin-top: 15px;
+}
+
+.review-name {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.review-content {
+    font-style: italic;
+    text-align: left;
+    margin: auto;
+}

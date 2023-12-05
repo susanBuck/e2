@@ -1,0 +1,41 @@
+prod#new-product-form {
+    text-align: center;
+}
+
+.form-group {
+    margin-top: 20px;
+}
+
+.info {
+    color: #333;
+    font-size: 1.0rem;
+}
+
+input[type=text],
+input[type=number] {
+    width: 300px;
+    display: inline;
+}
+
+#available {
+    width: 50px;
+}
+
+#weight {
+    width: 75px;
+    margin-right: 10px;
+}
+
+#description {
+    width: 400px;
+    margin: auto;
+}
+
+#price {
+    width: 75px;
+}
+
+label {
+    text-align: left;
+    display: inline;
+}

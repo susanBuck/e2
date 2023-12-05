@@ -4,6 +4,10 @@
     {{ $product['name'] }}
 @endsection
 
+@section('head')
+    <link href='/css/products/show.css' rel='stylesheet'>
+@endsection
+
 @section('content')
 
     @if ($reviewSaved)
@@ -53,6 +57,21 @@
             @endforeach
         </ul>
     @endif
+
+    <div id='reviews'>
+        <h3>What our customers think...</h3>
+
+        @if (!$reviews)
+            There are no reviews for this product yet.
+        @endif
+
+        @foreach ($reviews as $review)
+            <div class='review'>
+                <div class='review-name' test='review-name'>{{ $review['name'] }}</div>
+                <div class='review-content' test='review-content'>{{ $review['review'] }}</div>
+            </div>
+        @endforeach
+    </div>
 
     <a href='/products'>&larr; Return to all products</a>
 @endsection
